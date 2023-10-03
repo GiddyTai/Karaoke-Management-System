@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    background-color: white;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+th {
+    background-color: brown;
+    color: yellow;
+}
+tr.selected {
+    background-color: yellow;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
